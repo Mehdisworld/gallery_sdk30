@@ -1,0 +1,68 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 30
+    defaultConfig {
+        applicationId "com.phone.stargallery"
+        minSdkVersion 19
+        targetSdkVersion 30
+        versionCode 2
+        versionName "1.2"
+        multiDexEnabled true
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    sourceSets { main { res.srcDirs = ['src/main/res', 'src/main/res/menu'] } }
+    compileOptions {
+        targetCompatibility JavaVersion.VERSION_1_8
+        sourceCompatibility JavaVersion.VERSION_1_8
+    }
+    ndkVersion '25.1.8937393'
+    buildToolsVersion '30.0.3'
+    namespace 'gallery.os.com.gallery'
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation 'androidx.appcompat:appcompat:1.2.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    testImplementation 'junit:junit:4.13.2'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.4'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.0'
+    implementation 'com.makeramen:roundedimageview:2.3.0'
+    //*********  Glide Lib *************//
+    implementation 'com.github.bumptech.glide:glide:4.11.0'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.11.0'
+    //*********** tab view lib **************//
+    //  implementation 'com.ruslankishai:unmaterialtabs:0.1a'
+    implementation 'com.google.android.material:material:1.2.1'
+   // implementation project(':library')
+    implementation project(':slidshow')
+
+   // implementation 'com.github.chrisbanes:PhotoView:2.1.3'
+    implementation 'com.alexvasilkov:gesture-views:2.6.0'
+
+    // extra by admin
+
+
+    //******************* admob *********************
+    implementation 'com.google.android.gms:play-services-ads:19.5.0'
+    //******************* firebase *********************
+    //implementation 'com.google.firebase:firebase-core:16.0.4'
+
+    //******************* fb analytics *********************
+    implementation 'com.facebook.android:facebook-android-sdk:4.42.0'
+
+    //******************* fb ads *********************
+    implementation 'com.facebook.android:audience-network-sdk:5.11.0'
+
+    implementation 'com.android.volley:volley:1.2.1'
+    def multidex_version = "2.0.1"
+    implementation "androidx.multidex:multidex:$multidex_version"
+}

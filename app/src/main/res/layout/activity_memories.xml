@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/lv_ads"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/bottommenu"
+        android:background="#ff0000"
+        android:orientation="vertical"
+        android:visibility="visible">
+    </LinearLayout>
+
+
+    <ImageView
+        android:id="@+id/iv_empty"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/lv_ads"
+        android:layout_below="@+id/lv_titlebar"
+        android:padding="10dp"
+        android:src="@drawable/ic_no_moments"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/fbnativeadsetting"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/borderforadd"
+        android:layout_below="@+id/lv_titlebar"
+        android:orientation="vertical"/>
+
+    <ListView
+        android:id="@+id/lv_memories"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/lv_ads"
+        android:layout_below="@+id/fbnativeadsetting"
+        android:background="#f4f4f4"
+        android:divider="@null" />
+
+    <RelativeLayout
+        android:id="@+id/lv_titlebar"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@color/colorGreen">
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:gravity="center"
+            android:text="Memories"
+            android:textColor="#FFF"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:visibility="visible" />
+
+        <ImageView
+            android:id="@+id/iv_delete"
+            android:layout_width="30dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="5dp"
+            android:padding="3dp"
+            android:src="@drawable/ic_delete_small"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/iv_rename"
+            android:layout_width="30dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="5dp"
+            android:layout_toLeftOf="@+id/iv_delete"
+            android:padding="5dp"
+            android:src="@drawable/ic_editrename"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/bottommenu"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:background="#FFFFFF"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:id="@+id/rl_bttom_home"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/iv_bottom_home"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/ic_home"
+                android:tint="#78909c" />
+
+            <TextView
+                android:id="@+id/tv_bottom_home"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/iv_bottom_home"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:text="Home"
+                android:textColor="#78909c" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_bttom_photos"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/iv_bottom_photos"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/ic_photos"
+                android:tint="#78909c" />
+
+            <TextView
+                android:id="@+id/tv_bottom_photos"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/iv_bottom_photos"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:text="Photos"
+                android:textColor="#78909c" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_bttom_videos"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/iv_bottom_videos"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/ic_videos"
+                android:tint="#78909c" />
+
+            <TextView
+                android:id="@+id/tv_bottom_videos"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/iv_bottom_videos"
+                android:gravity="center"
+                android:text="Videos"
+                android:textColor="#78909c" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_bttom_memories"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/iv_bottom_memories"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/ic_album"
+                android:tint="#78909c" />
+
+            <TextView
+                android:id="@+id/tv_bottom_memories"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/iv_bottom_memories"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:text="Memories"
+                android:textColor="#78909c" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorAccent">#FF4081</color>
+
+
+    <color name="colorGray">#455a64</color>
+    <color name="colorRed">#FF3B30</color>
+    <color name="colorGreen">#1dba92</color>
+    <color name="colorListDivider">#d6d6d6</color>
+    <color name="colorWhite">#FFF</color>
+
+    <color name="subcolor">#757575</color>
+
+    <color name="theme">#8b39ff</color>
+    <color name="theme1">#ffcb00</color>
+    <color name="theme2">#ff4700</color>
+    <color name="theme3">#2ade75</color>
+    <color name="theme4">#ff2d55</color>
+    <color name="theme5">#007aff</color>
+    <color name="theme6">#26ccfc</color>
+    <color name="theme7">#242c66</color>
+    <color name="theme8">#1dcbc2</color>
+
+
+    <color name="colorPrimaryDark">#5b24a9</color>
+    <color name="colorPrimaryDark1">#cca200</color>
+    <color name="colorPrimaryDark2">#d73c00</color>
+    <color name="colorPrimaryDark3">#22b15e</color>
+    <color name="colorPrimaryDark4">#ce2344</color>
+    <color name="colorPrimaryDark5">#0066d6</color>
+    <color name="colorPrimaryDark6">#21a9d1</color>
+    <color name="colorPrimaryDark7">#3141af</color>
+    <color name="colorPrimaryDark8">#19b1a9</color>
+
+    <color name="colorTransparentblack">#7f000000</color>
+
+    <color name="actionbar_title_color">@android:color/white</color>
+
+</resources>

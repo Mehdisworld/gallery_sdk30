@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@drawable/dialog_bg"
+        android:orientation="vertical"
+        android:paddingBottom="10dp"
+
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="10dp">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:text="Theme Colors"
+            android:textColor="#000"
+            android:textSize="20sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp">
+
+            <com.makeramen.roundedimageview.RoundedImageView
+                android:id="@+id/iv_1"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_margin="5dp"
+                android:scaleType="centerCrop"
+                android:src="@color/theme"
+                app:riv_border_color="#FFF"
+                app:riv_border_width="5dp"
+                app:riv_corner_radius="5dp"
+                app:riv_oval="true" />
+
+            <com.makeramen.roundedimageview.RoundedImageView
+                android:id="@+id/iv_2"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_margin="5dp"
+                android:scaleType="centerCrop"
+                android:src="@color/theme1"
+                app:riv_border_color="#FFF"
+                app:riv_border_width="5dp"
+                app:riv_oval="true" />
+
+            <com.makeramen.roundedimageview.RoundedImageView
+                android:id="@+id/iv_3"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_margin="5dp"
+                android:scaleType="centerCrop"
+                android:src="@color/theme2"
+                app:riv_border_color="#FFF"
+                app:riv_border_width="5dp"
+                app:riv_corner_radius="5dp"
+                app:riv_oval="true" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp">
+
+            <com.makeramen.roundedimageview.RoundedImageView
+                android:id="@+id/iv_4"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_margin="5dp"
+                android:scaleType="centerCrop"
+                android:src="@color/theme3"
+                app:riv_border_color="#FFF"
+                app:riv_border_width="5dp"
+                app:riv_corner_radius="5dp"
+                app:riv_oval="true" />
+
+            <com.makeramen.roundedimageview.RoundedImageView
+                android:id="@+id/iv_5"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_margin="5dp"
+                android:scaleType="centerCrop"
+                android:src="@color/theme4"
+                app:riv_border_color="#FFF"
+                app:riv_border_width="5dp"
+                app:riv_corner_radius="5dp"
+                app:riv_oval="true" />
+
+            <com.makeramen.roundedimageview.RoundedImageView
+                android:id="@+id/iv_6"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_margin="5dp"
+                android:scaleType="centerCrop"
+                android:src="@color/theme5"
+                app:riv_border_color="#FFF"
+                app:riv_border_width="5dp"
+                app:riv_corner_radius="5dp"
+                app:riv_oval="true" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp">
+
+            <com.makeramen.roundedimageview.RoundedImageView
+                android:id="@+id/iv_7"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_margin="5dp"
+                android:scaleType="centerCrop"
+                android:src="@color/theme6"
+                app:riv_border_color="#FFF"
+                app:riv_border_width="5dp"
+                app:riv_corner_radius="5dp"
+                app:riv_oval="true" />
+
+            <com.makeramen.roundedimageview.RoundedImageView
+                android:id="@+id/iv_8"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_margin="5dp"
+                android:scaleType="centerCrop"
+                android:src="@color/theme7"
+                app:riv_border_color="#FFF"
+                app:riv_border_width="5dp"
+                app:riv_corner_radius="5dp"
+                app:riv_oval="true" />
+
+            <com.makeramen.roundedimageview.RoundedImageView
+                android:id="@+id/iv_9"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_margin="5dp"
+                android:scaleType="centerCrop"
+                android:src="@color/theme8"
+                app:riv_border_color="#FFF"
+                app:riv_border_width="5dp"
+                app:riv_corner_radius="5dp"
+                app:riv_oval="true" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:gravity="right"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_cancel"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:gravity="right|center_vertical"
+                android:paddingRight="10dp"
+                android:text="Cancel" />
+
+            <Button
+                android:id="@+id/btn_ok"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:gravity="right|center_vertical|center"
+                android:paddingRight="20dp"
+                android:text="Ok" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="ic_size_dialogue">25dp</dimen>
+    <dimen name="dialogue_textsize">12dp</dimen>
+    <dimen name="bottom_margin">3dp</dimen>
+
+    <dimen name="padding_10">10dp</dimen>
+
+
+    <dimen name="naving_ic_padding">13dp</dimen>
+    <dimen name="naving_text_padding">16sp</dimen>
+
+    <dimen name="header_height">250dp</dimen>
+    <dimen name="header_logo_size">100dp</dimen>
+
+    <dimen name="details_dialog_pading">30dp</dimen>
+
+
+    <dimen name="details_dialog_margin_right">10dp</dimen>
+
+</resources>
